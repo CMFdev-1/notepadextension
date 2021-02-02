@@ -1,1 +1,28 @@
-<textarea placeholder="Start typing here..." cols="70" rows="20"></textarea>
+<head>
+<style>
+
+</head>
+<html>
+    <body>
+        <script>
+            function saveText() {
+                var save = document.getElementById("input").value
+                localStorage.setItem("savedTxt",save)
+                console.log("Saved")
+            }
+            function loadText() {
+                var loaded = localStorage.getItem("savedTxt")
+                document.getElementById("input").value = loaded;
+                console.log("Loaded text")
+            }
+        </script>
+        <textarea placeholder="Start typing here..." cols="60" rows="19" id="input"></textarea>
+        <br>
+        <button onclick="saveText()">Save</button><a>  </a><button onclick="loadText()">Load</button>
+        <br>
+        <br>
+        <br>
+        <strong>Coded by RoCord :)</strong><br>
+        <strong>Extension by CMFdev</strong>
+    </body>
+</html>
