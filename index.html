@@ -1,18 +1,26 @@
 <head>
 <style>
+    body {
+background-color: #000000;
+font-family: Arial;
+color: #FFFFFF;
+}
     .button {
      font-family: Arial, Helvetica, sans-serif;
      font-size: 15px;
      background-color: #FFFFFF;
      color: #000000;
      border-color: #000000;
-     height: 30px;
-     width: 50px;
-     border-radius: 2px;
+     border-radius: 5px;
     }
+  .links {
+    color: #FFFFFF;
+  }
+</style>
 </head>
 <html>
     <body>
+<center>
         <script>
             function saveText() {
                 var save = document.getElementById("input").value
@@ -27,11 +35,13 @@
         </script>
         <textarea placeholder="Start typing here..." cols="60" rows="19" id="input"></textarea>
         <br>
-        <button onclick="saveText()">Save</button><a>  </a><button onclick="loadText()" class="button">Load</button>
         <br>
+        <button onclick="saveText()" class="button">Save text</button><a>  </a><button onclick="loadText()" class="button">Load previously-saved text</button>
         <br>
-        <br>
+<br>
         <strong>Coded by RoCord :)</strong><br>
-        <strong>Extension by CMFdev</strong>
+        <strong>Extension by CMFdev</strong><br>
+<br>Don't know where to get started? <br> <a class="links" href="https://cmfdev-1.github.io/notepadextension/documentation.html">Read the Documentation.</a></a>
     </body>
+</center>
 </html>
